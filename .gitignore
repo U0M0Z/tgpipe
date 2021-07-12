@@ -1,0 +1,15 @@
+# OS junk files
+*.DS_Store
+
+# Cached files
+.mypy_cache
+.tox
+.vscode
+
+# datasets
+tg_regression_model/datasets/TETKO_embedded_all.pkl
+tg_regression_model/datasets/Tetko_melting_point.sdf
+
+# Jupyter notebooks
+tests/*.ipynb
+tests/.ipynb_checkpoints
