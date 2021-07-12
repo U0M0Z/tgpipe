@@ -5,7 +5,6 @@ recursive-include ./tg_regression_model/*
 
 include tg_regression_model/datasets/*.csv
 include tg_regression_model/datasets/*.xlsx
-include tg_regression_model/datasets/*.pkl
 include tg_regression_model/trained_models/*.pkl
 include tg_regression_model/VERSION
 include tg_regression_model/config.yml
