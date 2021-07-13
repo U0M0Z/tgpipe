@@ -8,7 +8,7 @@ tgApp is a **pipeline framework** to be used to develop predictive models of che
 tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML), Data Engineering and Quantitative Structure–Property Relationships (QSPR) in Physical Chemistry.
 
 ## Requirements
-* **Python 3** (Python 2.x is [not supported](http://www.python3statement.org/))
+* **Python >=3.6.0** (Python 2.x is [not supported](http://www.python3statement.org/))
 * [NumPy](http://www.numpy.org/)
 * [pandas](http://pandas.pydata.org/)
 * [scikit-learn](http://scikit-learn.org/stable/)
