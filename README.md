@@ -24,6 +24,7 @@ Build status of continus integration i.e. travis, appveyor etc. Ex. -
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
 #### Documentation
+✨ 🍰 ✨
 TODO
 
 ## Usage
