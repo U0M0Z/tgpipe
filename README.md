@@ -17,6 +17,9 @@ tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML
 * [mol2vec](https://github.com/samoturk/mol2vec)
 * [xgboost](https://pypi.org/project/xgboost/)
 
+## Installation
+`pip install tgApp`
+
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
 
