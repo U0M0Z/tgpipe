@@ -17,7 +17,6 @@ tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML
 * [mol2vec](https://github.com/samoturk/mol2vec)
 * [xgboost](https://pypi.org/project/xgboost/)
 
-
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
 
@@ -37,7 +36,7 @@ from tgApp import tg_regression_model.processing.smiles_manager as sm
 Contact at tommaso.galeazzo@gmail.com
 
 ## Credits
-Initial development was supported by [AirUCI](https://airuci.mx), Heidelberg.
+Initial development was supported by [AirUCI](https://airuci.uci.edu), Irvine, CA.
 
 ## License
 BDS-3 © [Yourname](Tommaso Galeazzo)
