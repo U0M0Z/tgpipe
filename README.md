@@ -1,4 +1,4 @@
-![logo for tgApp](https://github.com/U0M0Z/tgApp/images/icon.png)
+![logo for tgApp](https://github.com/U0M0Z/tgApp/images/tgApp_logo.png)
 
 
 ## tgApp
