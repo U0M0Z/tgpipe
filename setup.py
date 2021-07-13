@@ -7,10 +7,10 @@ from setuptools import find_packages, setup
 
 # Package meta-data.
 NAME = 'tgApp'
-DESCRIPTION = "Package for development of chemical species properties from SMILES."
-URL = "https://github.com/U0M0Z/tgApp"
+DESCRIPTION = "Package for prediction of chemical species properties from SMILES."
+URL = 'https://github.com/U0M0Z/tgApp'
 EMAIL = "tommaso.galeazzo@gmail.com"
-AUTHOR = "tmsglz"
+AUTHOR = "Tommaso Galeazzo | www.tmsglz.com"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -34,6 +34,7 @@ with open(PACKAGE_DIR / "VERSION") as f:
 # What packages are required for this module to be executed?
 def list_reqs(fname="requirements.txt"):
     with open(REQUIREMENTS_DIR / fname) as fd:
+        fd.read().splitlines()
         return fd.read().splitlines()
 
 # Where the magic happens:

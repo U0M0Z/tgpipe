@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tgApp
+Version: 0.0.1
+Summary: Package for development of chemical species properties from SMILES.
+Home-page: https://github.com/U0M0Z/tgApp
+Author: tmsglz
+Author-email: tommaso.galeazzo@gmail.com
+License: BSD-3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+Package for development of chemical species properties from SMILES.
+
