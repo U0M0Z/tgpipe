@@ -39,4 +39,4 @@ Contact at tommaso.galeazzo@gmail.com
 Initial development was supported by [AirUCI](https://airuci.uci.edu), Irvine, CA.
 
 ## License
-BSD 3-clause © [Yourname](Tommaso Galeazzo)
+BSD 3-clause © [Tommaso Galeazzo](https://www.tmsglz.com)
