@@ -8,7 +8,7 @@ from rdkit import Chem  # type: ignore
 from rdkit.Chem import PandasTools  # type: ignore
 from sklearn.base import BaseEstimator, TransformerMixin  # type: ignore
 
-from tg_regression_model.config.core import TRAINED_MODEL_DIR, config
+from tgApp.config.core import TRAINED_MODEL_DIR, config
 
 
 class DatabaseExtractor:

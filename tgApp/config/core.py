@@ -4,10 +4,10 @@ from typing import List
 from pydantic import BaseModel
 from strictyaml import YAML, load  # type: ignore
 
-import tg_regression_model
+import tgApp
 
 # Project Directories
-PACKAGE_ROOT = Path(tg_regression_model.__file__).resolve().parent
+PACKAGE_ROOT = Path(tgApp.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 DATASET_DIR = PACKAGE_ROOT / "datasets"

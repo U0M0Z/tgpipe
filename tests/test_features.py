@@ -1,7 +1,7 @@
 import numpy as np
 
-from tg_regression_model.config.core import config
-from tg_regression_model.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
+from tgApp.config.core import config
+from tgApp.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
 
 
 def test_embedder_transformer(sample_input_data):

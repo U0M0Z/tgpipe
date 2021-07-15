@@ -1,13 +1,13 @@
 include *.txt
 include *.md
 include *.pkl
-recursive-include ./tg_regression_model/*
+recursive-include ./tgApp/*
 
-include tg_regression_model/datasets/*.csv
-include tg_regression_model/datasets/*.xlsx
-include tg_regression_model/trained_models/*.pkl
-include tg_regression_model/VERSION
-include tg_regression_model/config.yml
+include tgApp/datasets/*.csv
+include tgApp/datasets/*.xlsx
+include tgApp/trained_models/*.pkl
+include tgApp/VERSION
+include tgApp/config.yml
 
 include ./requirements/requirements.txt
 include ./requirements/test_requirements.txt

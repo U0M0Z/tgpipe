@@ -7,8 +7,8 @@
 .vscode
 
 # datasets
-tg_regression_model/datasets/TETKO_embedded_all.pkl
-tg_regression_model/datasets/Tetko_melting_point.sdf
+tgApp/datasets/TETKO_embedded_all.pkl
+tgApp/datasets/Tetko_melting_point.sdf
 
 # Jupyter notebooks
 tests/*.ipynb

@@ -3,11 +3,11 @@ import typing as t
 import numpy as np
 import pandas as pd  # type: ignore
 
-from tg_regression_model import __version__ as _version
-from tg_regression_model.config.core import config
-from tg_regression_model.processing.data_manager import load_pipeline
-from tg_regression_model.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
-from tg_regression_model.processing.validation import validate_inputs
+from tgApp import __version__ as _version
+from tgApp.config.core import config
+from tgApp.processing.data_manager import load_pipeline
+from tgApp.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
+from tgApp.processing.validation import validate_inputs
 
 trans_file_name = f"{config.app_config.transformer_pipeline_save_file}{_version}.pkl"
 reg_file_name = f"{config.app_config.regressor_pipeline_save_file}{_version}.pkl"

@@ -1,7 +1,7 @@
 import pytest
 
-from tg_regression_model.config.core import DATASET_DIR, config
-from tg_regression_model.processing.smiles_manager import DatabaseExtractor
+from tgApp.config.core import DATASET_DIR, config
+from tgApp.processing.smiles_manager import DatabaseExtractor
 
 
 @pytest.fixture()

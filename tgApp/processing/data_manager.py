@@ -3,8 +3,8 @@ import typing as t
 import joblib  # type: ignore
 from sklearn.pipeline import Pipeline  # type: ignore
 
-from tg_regression_model import __version__ as _version
-from tg_regression_model.config.core import TRAINED_MODEL_DIR, config
+from tgApp import __version__ as _version
+from tgApp.config.core import TRAINED_MODEL_DIR, config
 
 
 def save_pipeline(*, pipeline_to_persist: Pipeline, specifics: str) -> None:

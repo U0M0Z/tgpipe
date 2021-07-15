@@ -1,5 +1,5 @@
 # Package Overview
-package_name: tg_regression_model
+package_name: tgApp
 
 # Data Files
 training_data_file: Koop_dataset.csv
@@ -9,7 +9,7 @@ test_data_file: test.csv
 # The variable we are attempting to predict (Tg or Tm)
 target: Tg (K)
 
-pipeline_name: tgApp
+pipeline_name: tgApp_pipeline
 regressor_pipeline_save_file: tgModel_output_v
 transformer_pipeline_save_file: tgModel_transformer_pipe_v
 embedding_word2vec_model: model_300dim

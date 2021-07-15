@@ -1,7 +1,7 @@
 from sklearn.pipeline import Pipeline  # type: ignore
 
-import tg_regression_model.processing.smiles_manager as sm
-from tg_regression_model.config.core import config
+import tgApp.processing.smiles_manager as sm
+from tgApp.config.core import config
 
 trans_pipe = Pipeline(
     [

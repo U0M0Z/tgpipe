@@ -3,11 +3,11 @@ from pathlib import Path
 import numpy as np
 from sklearn.model_selection import train_test_split  # type: ignore
 
-import tg_regression_model.processing.smiles_manager as sm
-from tg_regression_model.config.core import DATASET_DIR, config
-from tg_regression_model.processing.data_manager import save_pipeline
-from tg_regression_model.regressor import regressor_pipe
-from tg_regression_model.transformer import trans_pipe
+import tgApp.processing.smiles_manager as sm
+from tgApp.config.core import DATASET_DIR, config
+from tgApp.processing.data_manager import save_pipeline
+from tgApp.regressor import regressor_pipe
+from tgApp.transformer import trans_pipe
 
 # sys.path.insert(2, '/Users/tommaso/Desktop/tgApp')
 
