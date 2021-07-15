@@ -33,7 +33,7 @@ TODO
 ## Usage
 ### As python module
 ```python
-from tgApp import tg_regression_model.processing.smiles_manager as sm
+from tgApp import tgApp.processing.smiles_manager as sm
 ```
 
 ## Contribute
