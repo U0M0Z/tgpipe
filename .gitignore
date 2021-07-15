@@ -13,3 +13,8 @@ tgApp/datasets/Tetko_melting_point.sdf
 # Jupyter notebooks
 tests/*.ipynb
 tests/.ipynb_checkpoints
+
+# Folders with wheels for pypi
+build
+dist
+tgApp.egg-info
