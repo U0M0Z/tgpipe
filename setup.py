@@ -19,7 +19,6 @@ REQUIRES_PYTHON = ">=3.6.0"
 # Except, perhaps the License and Trove Classifiers!
 # If you do change the License, remember to change the
 # Trove Classifier for that!
-long_description = DESCRIPTION
 
 # Load the package's VERSION file as a dictionary.
 about = {}
@@ -36,6 +35,10 @@ def list_reqs(fname="requirements.txt"):
     with open(REQUIREMENTS_DIR / fname) as fd:
         fd.read().splitlines()
         return fd.read().splitlines()
+
+with open(ROOT_DIR / 'README.md', encoding='utf-8') as fd:
+    long_description = fd.read()
+#long_description = DESCRIPTION
 
 # Where the magic happens:
 setup(
