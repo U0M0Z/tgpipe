@@ -10,3 +10,4 @@ xgboost
 gensim==3.8.3
 jupyterlab
 mol2vec @ git+https://github.com/samoturk/mol2vec
+rdkit-pypi
