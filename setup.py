@@ -29,12 +29,12 @@ with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
 
-
 # What packages are required for this module to be executed?
 def list_reqs(fname="requirements.txt"):
     with open(REQUIREMENTS_DIR / fname) as fd:
-        fd.read().splitlines()
-        return fd.read().splitlines()
+        list_of_requirements = fd.read().splitlines()
+        print('\n', type(list_of_requirements), list_of_requirements, '\n')
+        return list_of_requirements
 
 with open(ROOT_DIR / 'README.md', encoding='utf-8') as fd:
     long_description = fd.read()
