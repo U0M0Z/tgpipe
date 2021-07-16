@@ -21,6 +21,7 @@ tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML
 `pip install https://github.com/U0M0Z/tgApp`
 
 The tgApp library needs the independent installation of rdkit via conda-forge:
+
 `conda install -c conda-forge rdkit`
 
 ## Build status
