@@ -18,7 +18,10 @@ tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML
 * [xgboost](https://pypi.org/project/xgboost/)
 
 ## Installation
-`pip install tgApp`
+`pip install https://github.com/U0M0Z/tgApp`
+
+The tgApp library needs the independent installation of rdkit via conda-forge:
+`conda install -c conda-forge rdkit`
 
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
