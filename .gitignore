@@ -9,6 +9,8 @@
 # datasets
 tgApp/datasets/TETKO_embedded_all.pkl
 tgApp/datasets/Tetko_melting_point.sdf
+tgApp/datasets/BradleyDoublePlusGoodMeltingPointDataset_Highly_Curated_and_Validated.xlsx
+tgApp/datasets/Koop_dataset_Rothfuss_t0_bis.csv
 
 # Jupyter notebooks
 tests/*.ipynb
@@ -18,3 +20,6 @@ tests/.ipynb_checkpoints
 build
 dist
 tgApp.egg-info
+
+# Additional Files
+tgApp/SMILES_used_for_training.pkl
