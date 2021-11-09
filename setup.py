@@ -54,7 +54,7 @@ setup(
     packages=find_packages(exclude=("tests",)),
     package_data={"tgApp": ["VERSION"]},
     install_requires=list_reqs(),
-    dependency_links = ['git+https://github.com/samoturk/mol2vec'],
+    #dependency_links = ['git+https://github.com/samoturk/mol2vec'],
     extras_require={},
     include_package_data=True,
     license="BSD-3",

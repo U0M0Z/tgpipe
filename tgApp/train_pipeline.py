@@ -36,6 +36,8 @@ def run_training() -> None:
         "n_output SMILES: ", len(df_smiles[config.model_config.smiles_to_extract]), "\n"
     )
 
+    df_smiles.to_pickle("SMILES_used_for_training.pkl")
+
     Xtrain = df_smiles[config.model_config.embedding_list].values
     ytrain = df_smiles[config.model_config.target].values
 
