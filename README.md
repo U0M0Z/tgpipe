@@ -1,11 +1,11 @@
-![logo for tgApp](./images/tgApp_logo.png)
+![logo for tgApp](./images/tgBoost_logo.png)
 
 
-## tgApp
-tgApp is a **pipeline framework** to be used to develop predictive models of chemical species from SMILES notations. The pipeline comes with a **ML model** that predicts the Transition glass temperature (T<sub>g</sub>) of organic compounds.
+## tgBoost
+tgBoost is a **pipeline framework** to be used to develop predictive models of chemical species from SMILES notations. The pipeline comes with a **ML model** that predicts the glasss transition temperature (<em>T</em><sub>g</sub>) of organic compounds.
 
 ## Motivation
-tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML), Data Engineering and Quantitative Structure–Property Relationships (QSPR) in Physical Chemistry.
+tgBoost is a kickstart project aiming at expanding the use of Machine Learning (ML), Data Engineering and Quantitative Structure–Property Relationships (QSPR) in Physical Chemistry.
 
 ## Requirements
 * **Python >=3.6.0** (Python 2.x is [not supported](http://www.python3statement.org/))
@@ -20,7 +20,7 @@ tgApp is a kickstart project aiming at expanding the use of Machine Learning (ML
 ## Installation
 `pip install https://github.com/U0M0Z/tgApp`
 
-The tgApp library needs the independent installation of rdkit via conda-forge:
+The tgBoost library needs the independent installation of rdkit via conda-forge:
 
 `conda install -c conda-forge rdkit`
 
