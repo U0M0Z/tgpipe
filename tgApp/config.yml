@@ -17,6 +17,7 @@ embedding_word2vec_model: model_300dim
 # Features to transform
 features:
   - embeddings
+  - SMILES
 
 # File extraction details and actions
 target_param_to_extract: Tg (K)

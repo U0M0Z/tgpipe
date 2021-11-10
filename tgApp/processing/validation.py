@@ -32,8 +32,10 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
 
 
 class SmilesDataInputSchema(BaseModel):
-    species: Optional[str]
+    #species: Optional[str]
     #numerosi: Optional[float]
+    embeddings: Optional[float]
+    SMILES: Optional[str]
 
 
 class MultipleSmilesDataInputs(BaseModel):
