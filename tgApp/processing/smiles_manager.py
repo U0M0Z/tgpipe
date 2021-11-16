@@ -131,7 +131,8 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
         print(X[smiles])
 
         canon_list = list(
-            X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
+            # X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
+            X.squeeze().apply(lambda smi: self.get_canon_smiles(smi))
         )
 
         if len(X.columns) > 1:
