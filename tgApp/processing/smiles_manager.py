@@ -130,9 +130,12 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
         print(type(X))
         print(X[smiles])
 
-        canon_list = list(
-            X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
-        )
+        try:
+            canon_list = list(
+                X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
+            )
+        except:
+            canon_list = list(self.get_canon_smiles(X[smiles]))
 
         if len(X.columns) > 1:
             # *** actions for preparing df with SMILES list and target param
