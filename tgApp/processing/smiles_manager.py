@@ -205,8 +205,11 @@ class SmilesEmbedder(BaseEstimator, TransformerMixin):
         X = X.copy()
 
         # Squeeze df into list
-        aa_smis = X[smiles].squeeze().tolist()
-
+        try:
+            aa_smis = X[smiles].squeeze().tolist()
+        except Exception:
+            aa_smis = [X[smiles]]
+            
         # Get Mol2vec sentences from RDKit Morgan fingerprints of SMILES
         aas = [Chem.MolFromSmiles(x) for x in aa_smis]
         aa_sentences = [m2v.MolSentence(m2v.mol2alt_sentence(x, 1)) for x in aas]
