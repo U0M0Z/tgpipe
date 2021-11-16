@@ -208,7 +208,7 @@ class SmilesEmbedder(BaseEstimator, TransformerMixin):
         try:
             aa_smis = X[smiles].squeeze().tolist()
         except Exception:
-            aa_smis = [X[smiles]]
+            aa_smis = list(X[smiles])
 
         # Get Mol2vec sentences from RDKit Morgan fingerprints of SMILES
         aas = [Chem.MolFromSmiles(x) for x in aa_smis]
