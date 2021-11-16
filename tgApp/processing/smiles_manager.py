@@ -96,7 +96,7 @@ class CanonSmilesList(BaseEstimator, TransformerMixin):
             m = Chem.MolFromSmiles(smi)
             canon_smi = Chem.MolToSmiles(m, isomericSmiles=True, canonical=True)
         except Exception:
-            print("SMNILE not convertable:", smi)
+            print("SMILE not convertable:", smi)
             canon_smi = np.nan
 
         return canon_smi
@@ -134,7 +134,7 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
             canon_list = list(
                 X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
             )
-        except:
+        except Exception:
             canon_list = list(self.get_canon_smiles(X[smiles]))
 
         if len(X.columns) > 1:
