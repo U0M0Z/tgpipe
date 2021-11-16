@@ -127,16 +127,21 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
         X_ref = X.copy()
         X = X.copy()
 
-        print(type(X))
-        print(X[smiles])
+        print('wanna', type(X))
+        print('do not ', X[smiles])
+        print('I ', type(X[smiles]))
+        print('uhuh ', type(X[smiles][0]))
+        print('mama ', X[smiles][0])
 
         try:
             canon_list = list(
                 X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
             )
         except Exception:
-            canon_list = list(self.get_canon_smiles(X[smiles]))
-
+            canon_list = list(
+                X[smiles].apply(lambda smi: self.get_canon_smiles(smi))
+            )
+            
         if len(X.columns) > 1:
             # *** actions for preparing df with SMILES list and target param
             # create canon SMILES column
