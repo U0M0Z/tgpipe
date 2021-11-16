@@ -127,6 +127,9 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
         X_ref = X.copy()
         X = X.copy()
 
+        print(type(X))
+        print(X[smiles])
+
         canon_list = list(
             X[smiles].squeeze().apply(lambda smi: self.get_canon_smiles(smi))
         )
