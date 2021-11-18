@@ -22,5 +22,5 @@ dist
 tgboost.egg-info
 
 # Additional Files
-tgboost/SMILES_used_for_training.pkl
+**/SMILES_used_for_training.pkl
 **/__pycache__
