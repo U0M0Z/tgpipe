@@ -6,9 +6,9 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'tgApp'
+NAME = 'tgboost'
 DESCRIPTION = "Package for prediction of chemical species properties from SMILES."
-URL = 'https://github.com/U0M0Z/tgApp'
+URL = 'https://github.com/U0M0Z/tgboost'
 EMAIL = "tommaso.galeazzo@gmail.com"
 AUTHOR = "Tommaso Galeazzo | www.tmsglz.com"
 REQUIRES_PYTHON = ">=3.6.0"
@@ -24,7 +24,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 about = {}
 ROOT_DIR = Path(__file__).resolve().parent
 REQUIREMENTS_DIR = ROOT_DIR / 'requirements'
-PACKAGE_DIR = ROOT_DIR / 'tgApp'
+PACKAGE_DIR = ROOT_DIR / 'tgboost'
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
@@ -52,7 +52,7 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=("tests",)),
-    package_data={"tgApp": ["VERSION"]},
+    package_data={"tgboost": ["VERSION"]},
     install_requires=list_reqs(),
     #dependency_links = ['git+https://github.com/samoturk/mol2vec'],
     extras_require={},

@@ -9,5 +9,5 @@ joblib>=1.0.1,<1.1.0
 xgboost<=1.4.0
 gensim==3.8.3
 jupyterlab
-# mol2vec @ git+https://github.com/samoturk/mol2vec
+mol2vec @ git+https://github.com/samoturk/mol2vec
 rdkit-pypi

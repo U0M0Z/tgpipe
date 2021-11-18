@@ -1,4 +1,4 @@
-![logo for tgApp](./images/tgBoost_logo.png)
+![logo for tgboost](./images/tgBoost_logo.png)
 
 
 ## tgBoost
@@ -18,7 +18,7 @@ tgBoost is a kickstart project aiming at expanding the use of Machine Learning (
 * [xgboost](https://pypi.org/project/xgboost/)
 
 ## Installation
-`pip install https://github.com/U0M0Z/tgApp`
+`pip install https://github.com/U0M0Z/tgboost`
 
 The tgBoost library needs the independent installation of rdkit via conda-forge:
 
@@ -37,7 +37,7 @@ TODO
 ## Usage
 ### As python module
 ```python
-from tgApp import tgApp.processing.smiles_manager as sm
+from tgboost import tgboost.processing.smiles_manager as sm
 ```
 
 ## Contribute

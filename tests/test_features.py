@@ -1,7 +1,7 @@
 import numpy as np
 
-from tgApp.config.core import config
-from tgApp.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
+from tgboost.config.core import config
+from tgboost.processing.smiles_manager import SmilesEmbedder, SmilesWrapper
 
 
 def test_embedder_transformer(sample_input_data):

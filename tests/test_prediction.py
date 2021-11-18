@@ -2,7 +2,7 @@ import math
 
 import numpy as np
 
-from tgApp.predict import make_prediction
+from tgboost.predict import make_prediction
 
 
 def test_make_prediction(sample_input_data):

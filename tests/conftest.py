@@ -1,7 +1,7 @@
 import pytest
 
-from tgApp.config.core import DATASET_DIR, config
-from tgApp.processing.smiles_manager import DatabaseExtractor
+from tgboost.config.core import DATASET_DIR, config
+from tgboost.processing.smiles_manager import DatabaseExtractor
 
 
 @pytest.fixture()

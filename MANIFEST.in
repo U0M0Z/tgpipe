@@ -1,13 +1,13 @@
 include *.txt
 include *.md
 include *.pkl
-recursive-include ./tgApp/*
+recursive-include ./tgboost/*
 
-include tgApp/datasets/*.csv
-include tgApp/datasets/*.xlsx
-include tgApp/trained_models/*.pkl
-include tgApp/VERSION
-include tgApp/config.yml
+include tgboost/datasets/*.csv
+include tgboost/datasets/*.xlsx
+include tgboost/trained_models/*.pkl
+include tgboost/VERSION
+include tgboost/config.yml
 
 include ./requirements/requirements.txt
 include ./requirements/test_requirements.txt
