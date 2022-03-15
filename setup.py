@@ -6,7 +6,7 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'tgboost'
+NAME = 'tgapp'
 DESCRIPTION = "Package for prediction of chemical species properties from SMILES."
 URL = 'https://github.com/U0M0Z/tgboost'
 EMAIL = "tommaso.galeazzo@gmail.com"
