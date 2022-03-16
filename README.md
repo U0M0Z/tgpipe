@@ -31,7 +31,9 @@ Build status of continus integration i.e. travis, appveyor etc. Ex. -
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
 #### Documentation
-Details on model development and on the statistical analysis 
+Read the documentation on [Read the Docs](http://mol2vec.readthedocs.io/en/latest/).
+
+Details on the statistical analysis performed to develop the model and pipeline are found in the supporting [article](https://acp.copernicus.org/articles/18/17909/2018/). 
 
 ✨ 🍰 ✨
 TODO
