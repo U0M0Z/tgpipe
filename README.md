@@ -35,14 +35,13 @@ Read the documentation on [Read the Docs](http://mol2vec.readthedocs.io/en/lates
 
 Details on the statistical analysis performed to develop the model and pipeline are found in the supporting [article](https://acp.copernicus.org/articles/18/17909/2018/). 
 
-✨ 🍰 ✨
-TODO
-
 ## Usage
 ### As python module
 ```python
 from tgboost import tgboost.processing.smiles_manager as sm
 ```
+✨ 🍰 ✨
+TODO
 
 ### How to cite?
 ```bib
