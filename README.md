@@ -2,10 +2,10 @@
 
 
 ## tgBoost
-tgBoost is a **pipeline** infrastructure enabling development of QSAR/QSPR models based on molecular SMILES notation. The pipeline is based on the representation of chemical species via mol2vec, a machine learning algorithm converting molecular SMILES into molecular embeddings. The pipeline comes with a pretrained **machine learning model** that predicts the glasss transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds, and developed from the largest dataset of <em>T</em><sub>g</sub> measurements. 
+tgBoost is a **pipeline** infrastructure enabling development of QSAR/QSPR models from SMILES notation. The pipeline is based on [mol2vec](https://mol2vec.readthedocs.io/en/latest/), a machine learning algorithm converting molecular SMILES into molecular embeddings. 
 
 ## Motivation
-tgBoost is a kickstart project aiming at expanding the use of Machine Learning (ML), Data Engineering and Quantitative Structure–Property Relationships (QSPR) in Physical Chemistry.
+tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineering and QSAR/QSPR models in atmospheric and physical chemistry. The pipeline comes with a pretrained **machine learning** (ML) model which predicts the glasss transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds. The model is based on a Extreme Gradient Boosting framework ([XGBoost](https://xgboost.readthedocs.io/en/stable/)) and it is developed from the largest dataset of <em>T</em><sub>g</sub> measurements of monomer organic molecules ([Koop et al., 2011](https://pubs.rsc.org/en/content/articlelanding/2011/cp/c1cp22617g)).
 
 ## Requirements
 * **Python >=3.6.0** (Python 2.x is [not supported](http://www.python3statement.org/))
