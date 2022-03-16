@@ -2,7 +2,7 @@
 
 
 ## tgBoost
-tgBoost is a **pipeline** infrastructure enabling development of QSAR/QSPR models from SMILES notation. The pipeline is based on [mol2vec](https://mol2vec.readthedocs.io/en/latest/), a **machine learning** (ML) algorithm converting molecular SMILES into molecular embeddings. The pipeline is optimized for the prediction of the glass transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds, and can be enriched with further QSAR/QSPR models.
+tgBoost is a **pipeline** and QSPR model optimized for the prediction of the glass transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds. The pipeline is based on [mol2vec](https://mol2vec.readthedocs.io/en/latest/), a **machine learning** (ML) algorithm converting molecular SMILES into molecular embeddings. The pipeline can be enriched with further QSAR/QSPR models developed from SMILES notation.
 
 ## Motivation
 tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineering and QSAR/QSPR models in atmospheric and physical chemistry. The pipeline comes with a pretrained ML which predicting <em>T</em><sub>g</sub> of monomer organic compounds. The model is based on a Extreme Gradient Boosting framework ([XGBoost](https://xgboost.readthedocs.io/en/stable/)) and it is developed from the largest dataset of <em>T</em><sub>g</sub> measurements of monomer organic molecules ([Koop et al., 2011](https://pubs.rsc.org/en/content/articlelanding/2011/cp/c1cp22617g)).
@@ -20,7 +20,7 @@ tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineeri
 ## Installation
 `pip install https://github.com/U0M0Z/tgboost`
 
-The tgBoost library needs the independent installation of rdkit via conda-forge:
+tgBoost library needs the independent installation of rdkit via conda-forge:
 
 `conda install -c conda-forge rdkit`
 
@@ -31,6 +31,8 @@ Build status of continus integration i.e. travis, appveyor etc. Ex. -
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
 #### Documentation
+Detailed study about tgBoost development and 
+
 ✨ 🍰 ✨
 TODO
 
