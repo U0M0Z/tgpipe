@@ -41,7 +41,7 @@ def run_training() -> None:
     Xtrain = df_smiles[config.model_config.embedding_list].values
     ytrain = df_smiles[config.model_config.target].values
 
-    print("~~ DATA info \n")
+    print("~~ DATA info")
     n_samples = df_smiles[config.model_config.embedding_list].values.shape[0]
 
     if n_samples <= 1000:
@@ -59,6 +59,7 @@ def run_training() -> None:
             Xtest,
             "ytest: ",
             ytest,
+            '\n'
         )
     else:
         Xtrain, ytrain, Xtest, ytest = train_test_split(
@@ -68,14 +69,14 @@ def run_training() -> None:
             random_state=config.model_config.test_size,
         )
 
-        print("Xtrain: ", Xtrain.shape[0], "ytrain: ", ytrain.shape[0])
+        print("Xtrain: ", Xtrain.shape[0], "ytrain: ", ytrain.shape[0], '\n')
 
     Xtrain = np.array(list(Xtrain))
 
     print("*** REGRESSION step\n")
     regressor_pipe.fit(Xtrain, ytrain)
 
-    print("~ _ ~ ^ ~ _ ~ PIPELINE completed: trained model")
+    print("~ _ ~ ^ ~ _ ~ PIPELINE completed: \n trained model")
 
     # persist trained model
     save_pipeline(pipeline_to_persist=trans_pipe, specifics="transformer")
