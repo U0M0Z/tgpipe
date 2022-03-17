@@ -76,7 +76,14 @@ def run_training() -> None:
     print("*** REGRESSION step\n")
     regressor_pipe.fit(Xtrain, ytrain)
 
-    print("~ _ ~ ^ ~ _ ~ PIPELINE completed: \n trained model")
+    print("PIPELINE completed:")
+    print("_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
+    print('  __       ___                __ ')
+    print(' / /____ _/ _ )___  ___  ___ / /_')
+    print('/ __/ _ `/ _  / _ \/ _ \(_-</ __/')
+    print('\__/\_, /____/\___/\___/___/\__/ ')
+    print('   /___/                         ')
+    print("_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
 
     # persist trained model
     save_pipeline(pipeline_to_persist=trans_pipe, specifics="transformer")
