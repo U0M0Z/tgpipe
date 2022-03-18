@@ -47,7 +47,25 @@ python tgPipeline/tgboost/train_pipeline.py
 Check for the following message to confirm successful model training:
 
 ```
+*** EXTRACTION step
+n_input SMILES:  415 
 
+*** TRANSFORMING step
+n_output SMILES:  298 
+
+~~ DATA info
+Xtrain:  298 ytrain:  298 Xtest:  0 ytest:  0 
+
+*** REGRESSION step
+
+PIPELINE completed:
+_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _
+  __       ___                __ 
+ / /____ _/ _ )___  ___  ___ / /_
+/ __/ _ `/ _  / _ \/ _ \(_-</ __/
+\__/\_, /____/\___/\___/___/\__/ 
+   /___/                         
+_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _
 ```
 
 
