@@ -2,7 +2,7 @@
 
 
 ## tgBoost
-tgBoost is a **pipeline** and QSPR model optimized for the prediction of the glass transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds. The pipeline is based on [mol2vec](https://mol2vec.readthedocs.io/en/latest/), a **machine learning** (ML) algorithm converting molecular SMILES into molecular embeddings. The pipeline can be exapanded to include further QSAR/QSPR models developed from SMILES notation.
+tgBoost is a **pipeline** englobing QSPR model optimized for the prediction of the glass transition temperature (<em>T</em><sub>g</sub>) of monomer organic compounds. The pipeline is based on [mol2vec](https://mol2vec.readthedocs.io/en/latest/), a **machine learning** (ML) algorithm converting molecular SMILES into molecular embeddings. The pipeline can be exapanded to include further QSAR/QSPR models developed from SMILES notation.
 
 ## Motivation
 tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineering and QSAR/QSPR models in atmospheric and physical chemistry. The pipeline comes with a pretrained and ML powered QSPR model predicting <em>T</em><sub>g</sub> of monomer organic compounds. The model is based on a Extreme Gradient Boosting framework ([XGBoost](https://xgboost.readthedocs.io/en/stable/)) and it is developed from the largest dataset of experimental <em>T</em><sub>g</sub> of monomer organic molecules ([Koop et al., 2011](https://pubs.rsc.org/en/content/articlelanding/2011/cp/c1cp22617g)).
@@ -36,14 +36,28 @@ Read the documentation on [Read the Docs](http://mol2vec.readthedocs.io/en/lates
 Details on the statistical analysis performed to develop the model and pipeline are found in the supporting [article](https://acp.copernicus.org/articles/18/17909/2018/). 
 
 ## Usage
+## Basic use
+This code uses the tgPipeline to train tgBoost a QSPR model for *T*$_g$ prediction. The QSPR model is based on rdkit, mol2vec and xgboost. In order to use the model on your machine, you need to retrain the model to be conform to the C++ signature of your processor. 
+
+The tgBoost model is built, trained, and saved in ``` ./trained_models ``` with the command:
+```
+python tgPipeline/tgboost/train_pipeline.py
+```
+
 ### As python module
 ```python
 from tgboost import tgboost.processing.smiles_manager as sm
+from tgboost import predict
 ```
+The **first line** imports functions to open and preprocess files containing SMILES used for predictions, and the **second line** imports functions for predicting *T*$_g$ of SMILES.
+
+Check notebooks [repository](https://github.com/U0M0Z/tgpipe/tree/main/tgboost/notebooks) for examples and details. 
+
+### How to cite?
+
 ✨ 🍰 ✨
 TODO
 
-### How to cite?
 ```bib
 @Article{acp-18-17909-2018,
 AUTHOR = {Galeazzo, Tommaso and Shiraiwa, Manabu},
