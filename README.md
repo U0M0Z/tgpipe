@@ -37,19 +37,27 @@ Details on the statistical analysis performed to develop the model and pipeline 
 
 ## Usage
 ## Basic use
-This code uses the tgPipeline to train tgBoost a QSPR model for *T*$_g$ prediction. The QSPR model is based on rdkit, mol2vec and xgboost. In order to use the model on your machine, you need to retrain the model to be conform to the C++ signature of your processor. 
+This code uses the tgPipeline to train tgBoost a QSPR model for <em>T</em><sub>g</sub> prediction. The QSPR model is based on rdkit, mol2vec and xgboost. In order to use the model on your machine, you need to retrain the model to be conform to the C++ signature of your processor. 
 
 The tgBoost model is built, trained, and saved in ``` ./trained_models ``` with the command:
 ```
 python tgPipeline/tgboost/train_pipeline.py
 ```
 
+Check for the following message to confirm successful model training:
+
+```
+
+```
+
+
+
 ### As python module
 ```python
 from tgboost import tgboost.processing.smiles_manager as sm
 from tgboost import predict
 ```
-The **first line** imports functions to open and preprocess files containing SMILES used for predictions, and the **second line** imports functions for predicting *T*$_g$ of SMILES.
+The **first line** imports functions to open and preprocess files containing SMILES used for predictions, and the **second line** imports functions for predicting <em>T</em><sub>g</sub> of SMILES.
 
 Check notebooks [repository](https://github.com/U0M0Z/tgpipe/tree/main/tgboost/notebooks) for examples and details. 
 
