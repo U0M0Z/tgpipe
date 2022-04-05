@@ -18,7 +18,7 @@ tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineeri
 * [xgboost](https://pypi.org/project/xgboost/)
 
 ## Installation
-`pip install https://github.com/U0M0Z/tgboost`
+`pip install https://github.com/U0M0Z/tgpipe`
 
 tgBoost library needs the independent installation of rdkit via conda-forge:
 
@@ -31,9 +31,7 @@ Build status of continus integration i.e. travis, appveyor etc. Ex. -
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
 #### Documentation
-Read the documentation on [Read the Docs](http://mol2vec.readthedocs.io/en/latest/).
-
-Details on the statistical analysis performed to develop the model and pipeline are found in the supporting [article](https://acp.copernicus.org/articles/18/17909/2018/). 
+Details on the statistical analysis performed to develop the model and pipeline are found in the supporting [article](https://pubs.rsc.org/en/content/articlelanding/2022/ea/d1ea00090j#!divRelatedContent&articles). 
 
 ## Usage
 ## Basic use
