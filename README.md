@@ -80,7 +80,6 @@ Check notebooks [repository](https://github.com/U0M0Z/tgpipe/tree/main/tgboost/n
 ### How to cite?
 
 ✨ 🍰 ✨
-TODO
 
 ```bib
 @Article{D1EA00090J,
