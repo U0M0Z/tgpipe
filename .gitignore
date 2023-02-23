@@ -20,7 +20,9 @@ tests/.ipynb_checkpoints
 build
 dist
 tgboost.egg-info
+tgapp.egg-info
 
 # Additional Files
 **/SMILES_used_for_training.pkl
 **/__pycache__
+**/.ipynb_checkpoints

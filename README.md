@@ -20,9 +20,9 @@ tgBoost is a kickstart project aiming at expanding the use of ML, Data Engineeri
 ## Installation
 `pip install https://github.com/U0M0Z/tgpipe`
 
-tgBoost library needs the independent installation of rdkit via conda-forge:
+tgBoost library needs the independent installation of mol2vec via pip within the working environment:
 
-`conda install -c conda-forge rdkit`
+`pip install git+https://github.com/samoturk/mol2vec`
 
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
@@ -83,16 +83,17 @@ Check notebooks [repository](https://github.com/U0M0Z/tgpipe/tree/main/tgboost/n
 TODO
 
 ```bib
-@Article{acp-18-17909-2018,
-AUTHOR = {Galeazzo, Tommaso and Shiraiwa, Manabu},
-TITLE = {},
-JOURNAL = {},
-VOLUME = {},
-YEAR = {},
-NUMBER = {},
-PAGES = {},
-URL = {},
-DOI = {10.5194/acp-18-17909-2018}
+@Article{D1EA00090J,
+author ="Galeazzo, Tommaso and Shiraiwa, Manabu",
+title  ="Predicting glass transition temperature and melting point of organic compounds via machine learning and molecular embeddings",
+journal  ="Environ. Sci.: Atmos.",
+year  ="2022",
+volume  ="2",
+issue  ="3",
+pages  ="362-374",
+publisher  ="RSC",
+doi  ="10.1039/D1EA00090J",
+url  ="http://dx.doi.org/10.1039/D1EA00090J"
 }
 ```
 

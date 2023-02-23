@@ -9,8 +9,6 @@ from tgboost.processing.data_manager import save_pipeline
 from tgboost.regressor import regressor_pipe
 from tgboost.transformer import trans_pipe
 
-# sys.path.insert(2, '/Users/tommaso/Desktop/tgboost')
-
 
 def run_training() -> None:
     """Train the model."""
@@ -59,7 +57,7 @@ def run_training() -> None:
             Xtest,
             "ytest: ",
             ytest,
-            '\n'
+            "\n",
         )
     else:
         Xtrain, ytrain, Xtest, ytest = train_test_split(
@@ -69,7 +67,7 @@ def run_training() -> None:
             random_state=config.model_config.test_size,
         )
 
-        print("Xtrain: ", Xtrain.shape[0], "ytrain: ", ytrain.shape[0], '\n')
+        print("Xtrain: ", Xtrain.shape[0], "ytrain: ", ytrain.shape[0], "\n")
 
     Xtrain = np.array(list(Xtrain))
 
@@ -77,13 +75,13 @@ def run_training() -> None:
     regressor_pipe.fit(Xtrain, ytrain)
 
     print("PIPELINE completed:")
-    print("_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
-    print('  __       ___                __ ')
-    print(' / /____ _/ _ )___  ___  ___ / /_')
-    print('/ __/ _ `/ _  / _ \/ _ \(_-</ __/')
-    print('\__/\_, /____/\___/\___/___/\__/ ')
-    print('   /___/                         ')
-    print("_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
+    print(r"_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
+    print(r"  __       ___                __ ")
+    print(r" / /____ _/ _ )___  ___  ___ / /_")
+    print(r"/ __/ _ `/ _  / _ \/ _ \(_-</ __/")
+    print(r"\__/\_, /____/\___/\___/___/\__/ ")
+    print(r"   /___/                         ")
+    print(r"_ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ _ ~ ^ ~ _ ~ ^ ~ _ ~ ^ ~ _")
 
     # persist trained model
     save_pipeline(pipeline_to_persist=trans_pipe, specifics="transformer")
