@@ -8,6 +8,6 @@ feature-engine>=1.0.2,<1.1.0
 joblib>=1.0.1,<1.1.0
 xgboost<=1.4.0
 gensim==3.8.3
-mol2vec @ git+https://github.com/samoturk/mol2vec
 rdkit-pypi
+mol2vec @ git+https://github.com/samoturk/mol2vec
 setuptools<60.0.0

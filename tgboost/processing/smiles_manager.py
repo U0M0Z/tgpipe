@@ -159,7 +159,8 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
         else:
             # *** actions for prediction on single SMILES lists
             # set unique values of the SMILES
-            unique_canon = list(set(canon_list))
+            # unique_canon = list(set(canon_list))
+            unique_canon = self.unique_smiles(canon_list)
 
             # remove eventual NaN values from the prediction list
             unique_canon = [
@@ -180,6 +181,10 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
             canon_smi = np.nan
 
         return canon_smi
+
+    def unique_smiles(self, sequence):
+        seen = set()
+        return [x for x in sequence if not (x in seen or seen.add(x))]
 
 
 class SmilesEmbedder(BaseEstimator, TransformerMixin):

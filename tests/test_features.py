@@ -331,5 +331,5 @@ def test_embedder_transformer(sample_input_data):
 
     # Then
     assert str(
-        round(subject[config.model_config.embedding_list].iat[8, 0].sum(), 4)
+        round(subject[config.model_config.embedding_list].iat[0, 0].sum(), 4)
     ) == str(reference_smile)

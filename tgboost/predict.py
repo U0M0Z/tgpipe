@@ -41,12 +41,13 @@ def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
 
     if not errors:
         predictions = _xgbRegression_pipe.predict(X=tt_pred)
-        print(predictions)
+        pred_smiles_list = df_embedded["SMILES"].to_numpy().flatten().tolist()
 
         results = {
             "predictions": list(predictions),  # type: ignore
             "version": _version,
             "errors": errors,
+            "SMILES": pred_smiles_list,
         }
 
     return results

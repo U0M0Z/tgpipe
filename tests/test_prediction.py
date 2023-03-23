@@ -6,8 +6,8 @@ from tgboost.predict import make_prediction
 
 
 def test_make_prediction(sample_input_data):
-    # Given
-    expected_first_prediction_value = 230.6
+    # Given - before 230.6
+    expected_first_prediction_value = 248.2
     expected_no_predictions = 12
 
     # When

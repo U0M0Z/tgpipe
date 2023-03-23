@@ -39,4 +39,4 @@ class SmilesDataInputSchema(BaseModel):
 
 
 class MultipleSmilesDataInputs(BaseModel):
-    yolo: List[SmilesDataInputSchema]
+    SMILES: List[SmilesDataInputSchema]
